@@ -3,7 +3,7 @@
 Bootstrapping is the process for speeding up the syncing of your wallet.  Syncing is your wallet downloading all transactions from when it was made until now.  You can bootstrap your wallet to give it the file instead of it downloading slowly (syncing).
 
 ### To get bootstrap on your VPS/Masternode, follow this steps:
-**Notice:** If your GRIM masternode files path is not **_/root/.GrimMN_** change **COIN_PATH='/root/.GrimMN/'** to your location before your start 
+**Notice:** Bootstrap files will be refreshed every 3 hours.
 
 1. Login as root and stop your masternode
    ```
