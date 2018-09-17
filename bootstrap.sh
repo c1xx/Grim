@@ -10,11 +10,11 @@ cd $TMP_PATH
 echo -e "Downloading and extracting $COIN_NAME blockchain files."
 wget -q $COIN_CHAIN
 tar -xzvf $COIN_CHAIN_FILE -C $TMP_PATH
-rm -rf $COIN_PATH/blk0001.dat
+rm -rf $COIN_PATH/blk*.dat
 rm -rf $COIN_PATH/database
 rm -rf $COIN_PATH/smsgDB
 rm -rf $COIN_PATH/txleveldb
-mv $TMP_PATH/root/Bootstrap/.GrimMN/blk0001.dat $COIN_PATH
+mv $TMP_PATH/root/Bootstrap/.GrimMN/blk*.dat $COIN_PATH
 mv $TMP_PATH/root/Bootstrap/.GrimMN/database $COIN_PATH
 mv $TMP_PATH/root/Bootstrap/.GrimMN/smsgDB $COIN_PATH
 mv $TMP_PATH/root/Bootstrap/.GrimMN/txleveldb $COIN_PATH
